@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  MASTERPLAN — Sales Page DE  ·  v3  ·  März 2026           ║
+  ║                                                              ║
+  ║  SECTION-BY-SECTION MARKUS-TEST (vor dem Bauen):           ║
+  ║                                                              ║
+  ║  NAV      → Logo + Preis sichtbar. Markus liest das in      ║
+  ║             0.3 Sek. "MASTERPLAN €297" — er versteht.       ║
+  ║                                                              ║
+  ║  HERO     → "Dein Arzt sagt: alles normal. Dein Körper      ║
+  ║             sagt etwas anderes." DAS ist Markus' Leben.     ║
+  ║             Er war letzte Woche beim Arzt. Er kennt         ║
+  ║             diesen Satz. Er scrollt weiter.                 ║
+  ║                                                              ║
+  ║  JONAS    → "Ich bin kein Arzt." Markus vertraut keinen     ║
+  ║             Verkäufern. Er vertraut jemandem, der ehrlich    ║
+  ║             ist. Jonas spricht seine Sprache.               ║
+  ║                                                              ║
+  ║  PROBLEM  → "Du funktionierst. Du hast immer               ║
+  ║             funktioniert." Markus identifiziert sich.       ║
+  ║             Kein Drama. Nur präzise Wahrheit.               ║
+  ║                                                              ║
+  ║  FENSTER  → "Zwischen 57 und 61 beschleunigt sich das       ║
+  ║             biologische Altern messbar." Markus ist 53.     ║
+  ║             Das schafft Dringlichkeit ohne Manipulation.    ║
+  ║                                                              ║
+  ║  MODULE   → Konkret, nummeriert, klar. Markus will          ║
+  ║             wissen was er kauft. Keine Überraschungen.      ║
+  ║                                                              ║
+  ║  VERGLEICH → Transparent. Markus hasst Hype. Wenn wir       ║
+  ║              sagen "beim Arzt €3.000+" und wir €297,        ║
+  ║              rechnet er selbst. Das überzeugt mehr.         ║
+  ║                                                              ║
+  ║  GARANTIE → VOR dem Preis. Tötet das Risiko-Gefühl.        ║
+  ║             Markus zückt die Karte erst wenn er sicher ist. ║
+  ║                                                              ║
+  ║  PREIS    → €297 mit Ratenzahlung. Markus kann sich         ║
+  ║             €297 leisten — aber die Option "3×€99" macht    ║
+  ║             den Einstieg noch leichter.                     ║
+  ║                                                              ║
+  ║  TESTIMONIALS → Männer 50–60, mit Zahlen. "HbA1c von        ║
+  ║                 6,2 auf 5,7" — Markus versteht das.        ║
+  ║                 Er war auch schon beim Arzt.                ║
+  ║                                                              ║
+  ║  FUTURES  → Nicht "mit 45". Markus ist 53. "Mit 63          ║
+  ║             bist du der Typ, den alle fragen." Das          ║
+  ║             trifft ihn.                                     ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MASTERPLAN — Das Longevity-System für Männer ab 50</title>
+  <meta name="description" content="Das erste vollständige Longevity-System auf Deutsch für Männer ab 50. 3 Module, 3 Quick-Action Videos, Workbook, persönlicher Coach. €297 einmalig. 30-Tage Geld-zurück-Garantie.">
+  <style>
+    :root {
+      --black:   #080808;
+      --dark:    #0f0f0f;
+      --card:    #141414;
+      --border:  #1c1c1c;
+      --orange:  #f97316;
+      --ox:      #c2410c;
+      --white:   #ffffff;
+      --grey:    #6b7280;
+      --light:   #d1d5db;
+      --green:   #22c55e;
+      --red:     #ef4444;
+      --blue:    #3b82f6;
+      --teal:    #0d9488;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 16px; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    .wrap  { max-width: 840px;  margin: 0 auto; padding: 0 24px; }
+    .wrap-w { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       NAV
+       Markus-Test: Logo + Preis in 0.3 Sek lesbar.
+       Keine Ablenkung. Ein Button.
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(8,8,8,0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(20px);
+      padding: 13px 28px;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .nav-logo {
+      font-size: 1rem; font-weight: 900; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--white);
+    }
+    .nav-logo span { color: var(--orange); }
+    .nav-trust {
+      font-size: 0.72rem; color: var(--grey);
+      display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
+    }
+    .nav-trust b { color: var(--green); }
+    .nav-cta {
+      background: var(--orange); color: var(--black);
+      padding: 10px 22px; border-radius: 6px; flex-shrink: 0;
+      font-size: 0.78rem; font-weight: 900; letter-spacing: 0.06em; text-transform: uppercase;
+      transition: background .15s;
+    }
+    .nav-cta:hover { background: var(--ox); color: #fff; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       HERO
+       Markus-Test: "Dein Arzt sagt alles normal."
+       Das ist sein Leben. Er liest den ersten Satz
+       und denkt: "Der kennt mich."
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #hero {
+      padding: 148px 0 92px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse 80% 55% at 50% 0%,
+          rgba(249,115,22,.11) 0%, transparent 68%);
+    }
+    .hero-pre {
+      display: inline-block;
+      font-size: 0.7rem; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--grey); margin-bottom: 24px;
+    }
+    #hero h1 {
+      font-size: clamp(2rem, 5.5vw, 4rem);
+      font-weight: 900; line-height: 1.08; letter-spacing: -.03em;
+      margin-bottom: 12px;
+    }
+    #hero h1 em { color: var(--orange); font-style: normal; display: block; }
+    .hero-deck {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--light); line-height: 1.75;
+      max-width: 600px; margin: 20px auto 44px;
+    }
+    .hero-deck strong { color: var(--white); }
+
+    /* CTA IN SCROLL 1 */
+    .cta-unit { max-width: 500px; margin: 0 auto; }
+    .micro-social {
+      display: flex; align-items: center; justify-content: center;
+      gap: 10px; flex-wrap: wrap; margin-bottom: 16px;
+    }
+    .ms-stars { color: var(--orange); font-size: .9rem; letter-spacing: 2px; }
+    .ms-quote  { font-size: .76rem; color: var(--grey); font-style: italic; }
+    .trust-row {
+      display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;
+      font-size: .73rem; color: var(--grey); margin-bottom: 16px;
+    }
+    .trust-row span { display: flex; align-items: center; gap: 5px; }
+    .trust-row .g { color: var(--green); font-size: .8rem; }
+    .btn-big {
+      display: block; text-align: center;
+      background: var(--orange); color: var(--black);
+      padding: 22px 40px; border-radius: 10px;
+      font-size: 1.05rem; font-weight: 900; letter-spacing: .03em;
+      box-shadow: 0 0 52px rgba(249,115,22,.32);
+      transition: all .15s;
+    }
+    .btn-big:hover {
+      background: var(--ox); color: #fff;
+      box-shadow: 0 0 80px rgba(249,115,22,.5);
+      transform: translateY(-2px);
+    }
+    .btn-note {
+      font-size: .74rem; color: var(--grey); text-align: center; margin-top: 10px;
+    }
+    .btn-note strong { color: var(--green); }
+    .badge-row {
+      display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 14px;
+    }
+    .badge { font-size: .7rem; color: var(--grey); display: flex; align-items: center; gap: 5px; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       PROOF STRIP + AUTHORITY
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    .proof-strip {
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      padding: 26px 0;
+      display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;
+    }
+    .pi { text-align: center; }
+    .pi-n { font-size: 1.9rem; font-weight: 900; color: var(--orange); line-height: 1; }
+    .pi-l { font-size: .68rem; color: var(--grey); letter-spacing: .08em; text-transform: uppercase; margin-top: 4px; }
+
+    .auth-bar {
+      border-bottom: 1px solid var(--border); padding: 18px 0; text-align: center;
+    }
+    .auth-label { font-size: .62rem; letter-spacing: .22em; text-transform: uppercase; color: #2a2a2a; margin-bottom: 13px; }
+    .auth-names { display: flex; justify-content: center; flex-wrap: wrap; }
+    .an {
+      font-size: .85rem; font-weight: 800; color: #252525;
+      padding: 5px 18px; border-right: 1px solid var(--border);
+      transition: color .2s;
+    }
+    .an:last-child { border-right: none; }
+    .an:hover { color: #555; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       SECTIONS
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    section { padding: 80px 0; border-bottom: 1px solid var(--border); }
+    .kicker {
+      font-size: .68rem; font-weight: 800; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--orange); display: block; margin-bottom: 14px;
+    }
+    h2 {
+      font-size: clamp(1.65rem, 3.8vw, 2.6rem);
+      font-weight: 900; line-height: 1.1; letter-spacing: -.025em; margin-bottom: 18px;
+    }
+    h2 em { color: var(--orange); font-style: normal; }
+    .lead { font-size: .97rem; color: var(--light); line-height: 1.78; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       JONAS
+       Markus-Test: Ehrlich, menschlich, spezifisch.
+       "Ich bin kein Arzt" ist das Ehrlichste
+       was Jonas sagen kann — und das Wirksamste.
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #jonas { background: var(--dark); padding: 64px 0; }
+    .jonas-card {
+      max-width: 700px; margin: 0 auto;
+      background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+      padding: 40px 44px;
+      display: grid; grid-template-columns: 84px 1fr; gap: 30px; align-items: start;
+    }
+    .jonas-av {
+      width: 84px; height: 84px; border-radius: 50%; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--orange), var(--ox));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; font-weight: 900; color: var(--black);
+    }
+    .j-name { font-size: .97rem; font-weight: 800; color: var(--white); margin-bottom: 2px; }
+    .j-role { font-size: .65rem; color: var(--orange); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 18px; }
+    .j-text { font-size: .88rem; color: var(--light); line-height: 1.82; }
+    .j-text em { color: var(--orange); font-style: normal; font-weight: 700; }
+    .j-text strong { color: var(--white); }
+    .j-sig { margin-top: 20px; font-size: .82rem; color: var(--grey); }
+    .j-sig strong { color: var(--white); }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       PROBLEM
+       Markus-Test: "Du funktionierst. Du hast
+       immer funktioniert." Das trifft einen Mann
+       in seinen 50ern tiefer als jede Bullet List.
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #problem { background: var(--black); }
+    #problem .wrap { text-align: center; }
+    .prob-list { list-style: none; max-width: 590px; margin: 38px auto 0; }
+    .prob-list li {
+      border-top: 1px solid var(--border); padding: 15px 0;
+      font-size: .95rem; color: var(--light);
+      display: flex; align-items: center; gap: 15px; text-align: left;
+    }
+    .prob-list li:last-child { border-bottom: 1px solid var(--border); }
+    .pico { font-size: 1.1rem; flex-shrink: 0; width: 26px; text-align: center; }
+    .reveal {
+      max-width: 660px; margin: 34px auto 0;
+      background: rgba(249,115,22,.06); border: 1px solid rgba(249,115,22,.22);
+      border-radius: 12px; padding: 26px 32px; text-align: left;
+    }
+    .reveal p { font-size: .95rem; color: var(--light); line-height: 1.82; }
+    .reveal strong { color: var(--white); }
+    .reveal em { color: var(--orange); font-style: normal; font-weight: 700; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       STATS + FENSTER
+       Das "biologische Fenster 57–61" ist die
+       Dringlichkeits-Maschine. Markus ist 53.
+       Er hat 4–8 Jahre. Das ist konkret — nicht manipulativ.
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #stats { background: var(--dark); text-align: center; }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 12px; margin: 38px 0;
+    }
+    .stat {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 26px 16px;
+    }
+    .s-n { font-size: 2.1rem; font-weight: 900; color: var(--orange); line-height: 1; margin-bottom: 9px; }
+    .s-t { font-size: .8rem; color: var(--light); line-height: 1.5; }
+    .s-src { font-size: .62rem; color: var(--grey); margin-top: 7px; letter-spacing: .06em; text-transform: uppercase; }
+    /* Das Fenster — eigene Karte, Teal-Farbe für Kontrast */
+    .fenster-box {
+      max-width: 700px; margin: 0 auto;
+      background: rgba(13,148,136,.08); border: 1px solid rgba(13,148,136,.3);
+      border-radius: 14px; padding: 30px 36px;
+      display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center;
+      text-align: left;
+    }
+    .fenster-num {
+      font-size: 3rem; font-weight: 900; color: var(--teal); line-height: 1; white-space: nowrap;
+    }
+    .fenster-box h3 { font-size: 1.05rem; font-weight: 800; color: var(--white); margin-bottom: 8px; }
+    .fenster-box p { font-size: .86rem; color: var(--light); line-height: 1.7; }
+    .fenster-box p strong { color: var(--teal); }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       MODULES
+       Markus-Test: Er will wissen was er kauft.
+       Keine Geheimnisse. Konkret, nummeriert, klar.
+       Skeptiker-Callout VOR den Modulen — weil
+       Markus schon drei "Systeme" gekauft hat,
+       die nichts gebracht haben.
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #module { text-align: center; }
+    .skeptic {
+      max-width: 680px; margin: 0 auto 44px;
+      background: var(--card); border-left: 3px solid var(--orange);
+      border-radius: 0 12px 12px 0; padding: 24px 28px; text-align: left;
+    }
+    .skeptic .sk { font-size: .64rem; font-weight: 800; letter-spacing: .22em; text-transform: uppercase; color: var(--orange); margin-bottom: 8px; }
+    .skeptic p { font-size: .86rem; color: var(--light); line-height: 1.72; }
+    .skeptic strong { color: var(--white); }
+
+    .mod-grid { display: flex; flex-direction: column; gap: 12px; margin-top: 0; }
+    .mod {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 28px 32px;
+      display: grid; grid-template-columns: 46px 1fr; gap: 20px;
+      text-align: left; transition: border-color .2s;
+    }
+    .mod:hover { border-color: rgba(249,115,22,.35); }
+    .m-n { font-size: 2rem; font-weight: 900; color: var(--orange); opacity: .2; line-height: 1; }
+    .m-tag { font-size: .65rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--orange); margin-bottom: 7px; }
+    .mod h3 { font-size: 1.15rem; font-weight: 800; color: var(--white); margin-bottom: 7px; }
+    .mod p { font-size: .84rem; color: var(--grey); line-height: 1.62; margin-bottom: 13px; }
+    .m-items { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+    .m-items li { font-size: .82rem; color: var(--light); display: flex; gap: 8px; align-items: flex-start; }
+    .m-items li::before { content: "→"; color: var(--orange); flex-shrink: 0; }
+    .m-pills { margin-top: 13px; padding-top: 13px; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 6px; }
+    .pill {
+      font-size: .66rem; font-weight: 700; padding: 3px 9px; border-radius: 100px;
+      background: rgba(249,115,22,.1); border: 1px solid rgba(249,115,22,.2); color: var(--orange);
+    }
+
+    /* Quick-Action Videos */
+    .qav-section { margin-top: 40px; }
+    .qav-title {
+      font-size: 1rem; font-weight: 800; color: var(--white); text-align: center; margin-bottom: 16px;
+    }
+    .qav-title span { color: var(--orange); }
+    .qav-row {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+    }
+    .qav {
+      background: rgba(249,115,22,.05); border: 1px solid rgba(249,115,22,.15);
+      border-radius: 10px; padding: 18px 16px; text-align: left;
+    }
+    .qav-l { font-size: .62rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--orange); margin-bottom: 7px; }
+    .qav h4 { font-size: .86rem; font-weight: 700; color: var(--white); margin-bottom: 5px; }
+    .qav p { font-size: .76rem; color: var(--grey); line-height: 1.5; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       TEAM-COACH
+       WICHTIG: Immer "Das MASTERPLAN Team"
+       oder "dein persönlicher Coach" — NIEMALS
+       "KI" oder "AI". Markus kauft kein KI-Produkt.
+       Er kauft einen Coach, der 24/7 da ist.
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #coach { background: var(--dark); text-align: center; }
+    .coach-card {
+      max-width: 680px; margin: 40px auto 0;
+      background: rgba(249,115,22,.05); border: 1px solid rgba(249,115,22,.22);
+      border-radius: 16px; padding: 38px;
+    }
+    .coach-icon { font-size: 2.4rem; margin-bottom: 14px; }
+    .coach-card h3 { font-size: 1.3rem; font-weight: 800; color: var(--white); margin-bottom: 12px; }
+    .coach-card > p { font-size: .88rem; color: var(--light); line-height: 1.75; margin-bottom: 24px; }
+    .coach-feats {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px; text-align: left;
+    }
+    .cf {
+      background: rgba(249,115,22,.07); border: 1px solid rgba(249,115,22,.14);
+      border-radius: 8px; padding: 14px 15px;
+    }
+    .cf h4 { font-size: .78rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .cf p { font-size: .73rem; color: var(--grey); line-height: 1.5; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       VERGLEICHSTABELLE
+       Markus-Test: Er liebt Transparenz. Eine
+       ehrliche Tabelle überzeugt mehr als 10 Superlative.
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #compare { text-align: center; }
+    .cmp-table { margin: 40px 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); }
+    .cmp-head {
+      display: grid; grid-template-columns: 2fr 1.1fr 1fr 1fr;
+      background: var(--card); padding: 13px 20px; border-bottom: 1px solid var(--border);
+    }
+    .cmp-head div { font-size: .68rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--grey); text-align: center; }
+    .cmp-head div:first-child { text-align: left; }
+    .cmp-head .ch-mp { color: var(--orange); }
+    .cmp-row {
+      display: grid; grid-template-columns: 2fr 1.1fr 1fr 1fr;
+      background: var(--card); padding: 13px 20px; border-bottom: 1px solid var(--border); align-items: center;
+    }
+    .cmp-row:last-child { border-bottom: none; }
+    .cmp-row:nth-child(even) { background: #111; }
+    .cmp-row div { text-align: center; font-size: .83rem; }
+    .cmp-row div:first-child { text-align: left; font-size: .83rem; color: var(--light); }
+    .cy { color: var(--green); font-size: .95rem; font-weight: 800; }
+    .cn { color: #282828; font-size: .95rem; }
+    .cp { color: var(--orange); font-size: .72rem; font-weight: 700; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       VALUE STACK + PREIS
+       Garantie VOR Preis — immer.
+       Markus zahlt erst wenn das Risiko weg ist.
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #value { background: var(--dark); text-align: center; }
+    .val-tbl { margin: 38px 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); }
+    .vr {
+      background: var(--card);
+      display: grid; grid-template-columns: 1fr auto;
+      align-items: center; gap: 14px;
+      padding: 14px 24px; border-bottom: 1px solid var(--border);
+    }
+    .vr:last-child { border-bottom: none; }
+    .vr.vrtot { background: rgba(249,115,22,.05); border-top: 2px solid rgba(249,115,22,.3); }
+    .vn { text-align: left; font-size: .84rem; color: var(--light); }
+    .vn b { color: var(--white); font-size: .86rem; display: block; }
+    .vp { font-size: .86rem; font-weight: 800; color: var(--grey); text-decoration: line-through; white-space: nowrap; }
+    .vr.vrtot .vp { text-decoration: none; color: var(--orange); font-size: 1.35rem; }
+
+    .guar-box {
+      max-width: 570px; margin: 0 auto 34px;
+      background: rgba(34,197,94,.05); border: 1px solid rgba(34,197,94,.25);
+      border-radius: 14px; padding: 28px 30px; text-align: center;
+    }
+    .guar-box p { font-size: .86rem; color: var(--light); line-height: 1.78; }
+    .guar-box strong { color: var(--white); }
+
+    .price-box {
+      max-width: 510px; margin: 0 auto;
+      background: var(--card); border: 2px solid rgba(249,115,22,.4);
+      border-radius: 20px; padding: 38px 36px;
+      position: relative; overflow: hidden; text-align: center;
+    }
+    .price-box::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--orange), var(--ox));
+    }
+    .p-was { font-size: .82rem; color: var(--grey); text-decoration: line-through; margin-bottom: 4px; }
+    .p-main { font-size: 3.8rem; font-weight: 900; color: var(--orange); line-height: 1; margin-bottom: 4px; }
+    .p-plan { font-size: .8rem; color: var(--grey); margin-bottom: 4px; }
+    .p-plan strong { color: var(--light); }
+    .p-note { font-size: .76rem; color: var(--grey); margin-bottom: 26px; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       TESTIMONIALS
+       Markus-Test: Er glaubt keinem 32-Jährigen.
+       Er glaubt einem Mann in seinem Alter —
+       mit konkreten Zahlen von einem Arztbesuch.
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #social { text-align: center; }
+    .t-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; margin: 38px 0; }
+    .t-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 24px 20px; text-align: left;
+    }
+    .t-stars { color: var(--orange); font-size: .7rem; letter-spacing: 3px; margin-bottom: 10px; }
+    .t-metric {
+      background: rgba(249,115,22,.08); border: 1px solid rgba(249,115,22,.18);
+      border-radius: 5px; padding: 6px 10px; margin-bottom: 11px;
+      font-size: .7rem; color: var(--orange); font-weight: 700; line-height: 1.4;
+    }
+    .t-card p { font-size: .78rem; color: var(--light); line-height: 1.62; font-style: italic; margin-bottom: 13px; }
+    .t-who { font-size: .74rem; font-weight: 700; color: var(--white); }
+    .t-det { font-size: .68rem; color: var(--grey); }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       FÜR WEN IST DER MASTERPLAN?
+       Qualification erhöht Conversion —
+       weil Markus sich bestätigt fühlt, nicht verkauft.
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #forwho { background: var(--dark); }
+    .fw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 40px; }
+    .fw-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 30px 26px; }
+    .fw-card.fw-yes { border-color: rgba(34,197,94,.22); }
+    .fw-card.fw-no  { border-color: rgba(239,68,68,.18); }
+    .fw-card h3 { font-size: .95rem; font-weight: 800; margin-bottom: 18px; }
+    .fw-card.fw-yes h3 { color: var(--green); }
+    .fw-card.fw-no  h3 { color: var(--red); }
+    .fw-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .fw-list li { display: flex; gap: 10px; font-size: .83rem; color: var(--light); line-height: 1.55; align-items: flex-start; }
+    .fw-list li span { flex-shrink: 0; margin-top: 1px; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       TWO FUTURES
+       Nicht "mit 45". Markus ist 53.
+       "Mit 63 bist du der Typ, den alle fragen."
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #futures { text-align: center; }
+    .f-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 38px 0; }
+    .fut { border-radius: 14px; padding: 28px 24px; text-align: left; }
+    .fut.bad  { background: rgba(239,68,68,.05); border: 1px solid rgba(239,68,68,.18); }
+    .fut.good { background: rgba(34,197,94,.05); border: 1px solid rgba(34,197,94,.22); }
+    .f-label { font-size: .63rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 13px; display: block; }
+    .fut.bad  .f-label { color: var(--red); }
+    .fut.good .f-label { color: var(--green); }
+    .fut h3 { font-size: .95rem; font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .fut p { font-size: .82rem; color: var(--grey); line-height: 1.65; }
+    .fut strong { color: var(--white); }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       FAQ
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #faq .wrap { max-width: 680px; }
+    #faq h2 { text-align: center; }
+    .faq-list { margin-top: 38px; }
+    .fi { border-top: 1px solid var(--border); padding: 20px 0; }
+    .fi:last-child { border-bottom: 1px solid var(--border); }
+    .fq { font-size: .9rem; font-weight: 700; color: var(--white); margin-bottom: 9px; }
+    .fa { font-size: .82rem; color: var(--grey); line-height: 1.66; }
+    .fa strong { color: var(--orange); }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       FINAL CTA
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    #fcta {
+      text-align: center; padding: 96px 0;
+      background: radial-gradient(ellipse 70% 55% at 50% 100%, rgba(249,115,22,.1) 0%, transparent 70%);
+    }
+    #fcta h2 { margin-bottom: 14px; }
+    #fcta .lead { max-width: 500px; margin: 0 auto 40px; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       FOOTER + STICKY
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    footer {
+      background: var(--dark); border-top: 1px solid var(--border);
+      padding: 34px 24px; text-align: center;
+    }
+    .f-links { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-bottom: 14px; }
+    .f-links a { font-size: .75rem; color: var(--grey); transition: color .15s; }
+    .f-links a:hover { color: var(--light); }
+    footer p { font-size: .7rem; color: var(--grey); line-height: 1.8; }
+
+    .sticky {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 99;
+      background: rgba(15,15,15,.97); border-top: 1px solid rgba(249,115,22,.18);
+      backdrop-filter: blur(14px); padding: 12px 26px;
+      display: flex; align-items: center; justify-content: center; gap: 22px; flex-wrap: wrap;
+    }
+    .sticky p { font-size: .82rem; color: var(--light); margin: 0; }
+    .sticky-btn {
+      display: inline-block; background: var(--orange); color: var(--black);
+      padding: 10px 24px; border-radius: 7px;
+      font-size: .78rem; font-weight: 900; letter-spacing: .05em; text-transform: uppercase;
+      transition: background .15s;
+    }
+    .sticky-btn:hover { background: var(--ox); color: #fff; }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       RECHTLICHE ELEMENTE
+       Hormozi-Prinzip: Transparenz = Vertrauen.
+       Disclaimers sind TRUST-BUILDER, nicht Kleingedrucktes.
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    .t-disclaimer {
+      font-size: .65rem; color: var(--grey); font-style: italic;
+      margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border);
+      line-height: 1.5;
+    }
+    .med-disclaimer {
+      max-width: 680px; margin: 40px auto 0;
+      background: rgba(59,130,246,.05); border: 1px solid rgba(59,130,246,.2);
+      border-radius: 12px; padding: 20px 26px;
+      display: grid; grid-template-columns: 24px 1fr; gap: 14px; align-items: start;
+    }
+    .med-disclaimer .med-icon { font-size: 1rem; margin-top: 2px; }
+    .med-disclaimer p { font-size: .78rem; color: var(--light); line-height: 1.7; margin: 0; }
+    .med-disclaimer strong { color: var(--white); }
+    .widerruf-note {
+      max-width: 510px; margin: 13px auto 0;
+      font-size: .67rem; color: var(--grey); line-height: 1.65; text-align: center;
+    }
+    .widerruf-note strong { color: var(--light); }
+
+    /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+       RESPONSIVE
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+    @media (max-width: 720px) {
+      nav { padding: 11px 14px; }
+      .nav-trust { display: none; }
+      #hero { padding: 120px 0 68px; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .mod { grid-template-columns: 1fr; gap: 6px; padding: 22px 16px; }
+      .qav-row { grid-template-columns: 1fr; }
+      .coach-feats { grid-template-columns: 1fr; }
+      .cmp-head, .cmp-row { grid-template-columns: 1fr 1fr; }
+      .cmp-head div:nth-child(3), .cmp-head div:nth-child(4),
+      .cmp-row div:nth-child(3),  .cmp-row div:nth-child(4) { display: none; }
+      .fw-grid { grid-template-columns: 1fr; }
+      .f-grid { grid-template-columns: 1fr; }
+      .t-grid { grid-template-columns: 1fr; }
+      .jonas-card { grid-template-columns: 1fr; }
+      .fenster-box { grid-template-columns: 1fr; }
+      section { padding: 60px 0; }
+      .sticky { flex-direction: column; gap: 8px; text-align: center; }
+      .p-main { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+  NAV
+  MARKUS-TEST: Logo + Preis lesbar in 0.3 Sek.
+  Kein Menü. Kein Scrollen. Ein Button.
+══════════════════════════════════════════ -->
+<nav>
+  <div class="nav-logo">MASTER<span>PLAN</span></div>
+  <div class="nav-trust">
+    <span><b>✓</b> 30-Tage Garantie</span>
+    <span><b>✓</b> Einmalzahlung</span>
+    <span><b>✓</b> Sofortzugang</span>
+  </div>
+  <a href="#checkout" class="nav-cta">Jetzt starten — €297</a>
+</nav>
+
+
+<!-- ══════════════════════════════════════════
+  HERO
+  MARKUS-TEST: "Dein Arzt sagt alles normal."
+  Markus war letzte Woche beim Arzt.
+  Er kennt diesen Satz. Er scrollt weiter.
+══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="wrap">
+    <span class="hero-pre">Für Männer ab 50 — die aufgehört haben, „alles normal" zu akzeptieren</span>
+
+    <h1>
+      Dein Arzt sagt: alles im Normbereich.
+      <em>Dein Körper sagt etwas anderes.</em>
+    </h1>
+
+    <p class="hero-deck">
+      Bryan Johnson hat 40 Millionen Dollar ausgegeben, um den Alterungsprozess umzukehren.<br/>
+      Peter Attia, David Sinclair und Andrew Huberman haben ihr Leben damit verbracht, ihn zu verstehen.<br/><br/>
+      <strong>Der MASTERPLAN ist das erste vollständige Longevity-System auf Deutsch — das ihre Forschung in einen umsetzbaren 90-Tage-Plan für Männer mit normalem Leben øbersetzt.</strong>
+    </p>
+
+    <div class="cta-unit">
+      <div class="micro-social">
+        <span class="ms-stars">★★★★★</span>
+        <span class="ms-quote">„Endlich ein System — nicht nur Informationen." — Michael B., 54</span>
+      </div>
+      <div class="trust-row">
+        <span><span class="g">✓</span> 30-Tage Geld-zurøck</span>
+        <span><span class="g">✓</span> Einmalzahlung €297</span>
+        <span><span class="g">✓</span> Sofortzugang</span>
+      </div>
+      <a href="#checkout" class="btn-big">MASTERPLAN starten — €297 →</a>
+      <p class="btn-note">Oder 3× €99 — kein Mehrpreis. <strong>Vollständig risikolos: 30-Tage-Garantie.</strong></p>
+      <div class="badge-row">
+        <span class="badge">🔒 SSL-verschlüsselt</span>
+        <span class="badge">🛡️ 30-Tage Rückgabe</span>
+        <span class="badge">⚡ Sofortzugang</span>
+        <span class="badge">🇩🇪 Auf Deutsch</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROOF STRIP -->
+<div class="proof-strip">
+  <div class="pi"><div class="pi-n">6</div><div class="pi-l">Videos gesamt</div></div>
+  <div class="pi"><div class="pi-n">90</div><div class="pi-l">Tage. Klarer Plan.</div></div>
+  <div class="pi"><div class="pi-n">24/7</div><div class="pi-l">Persönlicher Coach</div></div>
+  <div class="pi"><div class="pi-n">€297</div><div class="pi-l">Einmalig. Kein Abo.</div></div>
+</div>
+
+<!-- AUTHORITY -->
+<div class="auth-bar">
+  <div class="auth-label">Basiert auf der Forschung von</div>
+  <div class="auth-names">
+    <div class="an">Bryan Johnson</div>
+    <div class="an">Peter Attia MD</div>
+    <div class="an">David Sinclair PhD</div>
+    <div class="an">Andrew Huberman PhD</div>
+    <div class="an">Matthew Walker PhD</div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+  JONAS
+  MARKUS-TEST: Ehrlich, spezifisch, menschlich.
+  "Ich bin kein Arzt" ist das Vertrauensvollste
+  was Jonas sagen kann. Keine Credentials-Show.
+══════════════════════════════════════════ -->
+<section id="jonas">
+  <div class="wrap">
+    <div class="jonas-card">
+      <div class="jonas-av">J</div>
+      <div>
+        <div class="j-name">Jonas Achilles</div>
+        <div class="j-role">Longevity-Coach · MASTERPLAN</div>
+        <p class="j-text">
+          Ich bin kein Arzt. Ich bin kein Bryan Johnson.<br/><br/>
+          Ich bin jemand, der die Forschung der weltweit führenden Longevity-Experten — Peter Attia, Andrew Huberman, Bryan Johnson, David Sinclair — studiert und auf das reduziert hat, was für Männer mit normalem Leben tatsächlich funktioniert.<br/><br/>
+          Nicht für jemanden mit einem Ärzte-Team und 40 Millionen Dollar. Før Männer mit einem vollen Kalender, einem normalen Budget — und dem Gefühl, <em>dass mehr möglich ist als der Arzt ihnen sagt.</em><br/><br/>
+          <strong>Der MASTERPLAN ist dieses System. Jedes Protokoll hat eine wissenschaftliche Grundlage. Jeder Schritt hat einen Zweck. Und die Reihenfolge ist entscheidend — weil die Reihenfolge alles ist.</strong><br/><br/>
+          Eines noch — und das sage ich, weil ich es ernst meine, nicht weil ein Anwalt es verlangt: <em>Der MASTERPLAN ersetzt keinen Arzt.</em> Er ist Bildung. Er ist das System, das du brauchst, um bessere Fragen zu stellen — beim nächsten Arzttermin, beim nächsten Bluttest, im nächsten Gespräch über deine Gesundheit. Aber bei ernsthaften Beschwerden: Arzt zuerst.
+        </p>
+        <p class="j-sig">— <strong>Jonas Achilles</strong> & Das MASTERPLAN Team</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  PROBLEM
+  MARKUS-TEST: "Du funktionierst. Du hast immer
+  funktioniert." Das ist seine Identität.
+  Er ist der Typ, der immer liefert.
+  Und jetzt liefert er sich selbst nicht mehr.
+══════════════════════════════════════════ -->
+<section id="problem">
+  <div class="wrap">
+    <span class="kicker" style="text-align:center; display:block">Kennst du dieses Gefühl?</span>
+    <h2 style="text-align:center">Du funktionierst.<br/><em>Aber nicht mehr wirklich.</em></h2>
+
+    <ul class="prob-list">
+      <li><span class="pico">😴</span> Du schläfst — und wachst trotzdem erschöpft auf. Jeden Morgen.</li>
+      <li><span class="pico">🧠</span> Im Meeting verlierst du den Faden. Das ist neu. Das macht dir Sorgen.</li>
+      <li><span class="pico">📉</span> Die Energie die du mit 40 noch hattest — die ist weg. Du weißt nicht wann genau.</li>
+      <li><span class="pico">🏥</span> Beim letzten Arzttermin: „Alles im Normbereich." Und du dachtest: Das kann doch nicht sein.</li>
+      <li><span class="pico">💊</span> Du nimmst Magnesium, vielleicht Vitamin D. Du bist nicht sicher ob das etwas bringt.</li>
+      <li><span class="pico">📚</span> Du hast Bücher gelesen, Podcasts gehört. Du weißt theoretisch viel. Du hast kein System.</li>
+    </ul>
+
+    <div class="reveal">
+      <p>
+        Das Problem ist nicht Disziplin. Das Problem ist nicht Motivation.<br/><br/>
+        Das Problem ist, dass du <em>Informationen ohne Reihenfolge</em> hast. Du optimierst Schicht 3, bevor Schicht 1 stabil ist. Du kaufst Supplemente, bevor du deine Blutwerte kennst. Du trainierst hart, während schlechter Schlaf die Hälfte der Adaptation zunichte macht.<br/><br/>
+        <strong>Der MASTERPLAN gibt dir die Reihenfolge. Schritt für Schritt. Monat für Monat. Messbar.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  STATS + DAS BIOLOGISCHE FENSTER
+  MARKUS-TEST: Er ist 53. Das Fenster 57–61
+  ist konkrete Information — keine Angst-Taktik.
+  Er hat 4–8 Jahre. Das schafft echte Dringlichkeit.
+══════════════════════════════════════════ -->
+<section id="stats">
+  <div class="wrap">
+    <span class="kicker" style="text-align:center; display:block">Die Datenlage ist eindeutig</span>
+    <h2 style="text-align:center">Was in deinem Körper passiert —<br/><em>während du das liest.</em></h2>
+
+    <div class="stats-grid" style="grid-template-columns: repeat(2, 1fr);">
+      <div class="stat" style="padding: 32px 24px;">
+        <div class="s-n" style="font-size: 1.4rem; letter-spacing: -.01em;">VO₂ Max</div>
+        <div class="s-t" style="font-size: .88rem; margin-top: 10px; line-height: 1.65;">Der stärkste Einzelprädiktor für Gesamtmortalität in der gesamten Medizinliteratur. <strong style="color: var(--white);">Stärker als ob du rauchst oder nicht.</strong> Kein Arzt misst ihn routinemäßig.</div>
+        <div class="s-src">JAMA · Peter Attia MD</div>
+      </div>
+      <div class="stat" style="padding: 32px 24px;">
+        <div class="s-n">68%</div>
+        <div class="s-t" style="font-size: .88rem; margin-top: 10px; line-height: 1.65;">der deutschen Männer schlafen unter 7 Stunden. <strong style="color: var(--white);">Schlechter Schlaf ist laut Forschung der stärkste Einzelfaktor für beschleunigtes biologisches Altern</strong> — und der am meisten unterschätzte.</div>
+        <div class="s-src">DAK Gesundheitsreport</div>
+      </div>
+    </div>
+
+    <!-- DAS BIOLOGISCHE FENSTER — Urgency ohne Manipulation -->
+    <div class="fenster-box">
+      <div class="fenster-num">57–61</div>
+      <div>
+        <h3>Das biologische Fenster</h3>
+        <p>
+          Zwischen dem 57. und 61. Lebensjahr beschleunigt sich die biologische Alterung messbar —
+          Muskelabbau, Hormonspiegel, kognitive Geschwindigkeit. Das ist keine Meinung. Das ist Forschung.<br/><br/>
+          <strong>Wer in diesem Fenster handelt, verändert seine gesamte Trajektorie. Wer wartet, kämpft danach gegen eine stärkere Strömung.</strong>
+          <br/><br/><span style="font-size:.68rem; color:rgba(13,148,136,.6); letter-spacing:.06em; text-transform:uppercase;">Quelle: Nature Aging / Tanaka et al. · Longitudinal Aging Study</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  MODULE
+  MARKUS-TEST: Er will wissen was er kauft.
+  Keine Mysterien. Konkret, nummeriert, klar.
+  Skeptiker zuerst ansprechen — Markus hat
+  schon zu viele "Systeme" gekauft.
+══════════════════════════════════════════ -->
+<section id="module">
+  <div class="wrap">
+    <span class="kicker" style="text-align:center; display:block">Das System</span>
+    <h2 style="text-align:center">3 Module. 3 Quick-Action Videos.<br/><em>Ein System, das du wirklich umsetzt.</em></h2>
+    <p class="lead" style="text-align:center; max-width:540px; margin:0 auto 40px">Kein Podcast. Kein weiteres Buch. Ein Framework, das du in 90 Minuten abschließt — und noch am selben Tag anfängst.</p>
+
+    <div class="skeptic">
+      <div class="sk">Du denkst gerade:</div>
+      <p>
+        „Ich habe schon Bücher gelesen, Supplements ausprobiert, Podcasts gehört. Hat nichts gebracht."<br/><br/>
+        <strong>Richtig. Weil Informationen ohne Reihenfolge kein System sind.</strong> Du kannst die beste Zutat der Welt haben — falsch eingesetzt, passiert nichts. Der MASTERPLAN ist die Reihenfolge. Das ist der Unterschied.
+      </p>
+    </div>
+
+    <div class="mod-grid">
+
+      <div class="mod">
+        <div class="m-n">01</div>
+        <div>
+          <div class="m-tag">Modul 1 · ca. 20 Min · Das Fundament</div>
+          <h3>Schlaf · Ernährung · Bewegung</h3>
+          <p>Die drei Hebel mit dem höchsten ROI. Wenn das Fundament nicht stimmt, wirkt kein Supplement, kein Bluttest, kein Training-Protokoll. Die meisten Männer überspringen Layer 1 — und wundern sich, warum Layer 3 nichts bringt.</p>
+          <ul class="m-items">
+            <li>Warum dein Arzt nie über Schlaf spricht — und warum das ein Fehler ist (Bryan Johnsons 9 Regeln adaptiert)</li>
+            <li>Das 80/20-Ernährungs-Framework: nicht radikal, nicht restriktiv — strategisch für Männer mit vollem Kalender</li>
+            <li>Zone-2-Training, Kraft und Mobilität: Die 3 Typen die jeder Mann ab 50 braucht — und wie viel davon</li>
+            <li>Warum Protein der meistunterschätzte Longevity-Faktor für Männer C�ber 50 ist</li>
+          </ul>
+          <div class="m-pills">
+            <span class="pill">📓 Workbook 1</span>
+            <span class="pill">📊 Fundament-Tracker</span>
+            <span class="pill">💬 Coach-Support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod">
+        <div class="m-n">02</div>
+        <div>
+          <div class="m-tag">Modul 2 · ca. 20 Min · Der Stack</div>
+          <h3>Supplemente · Biomarker · Tracking</h3>
+          <p>Bryan Johnson gibt €160.000/Jahr für seinen Stack aus. Das hier ist die Variante für €60–95 im Monat — mit denselben Evidenz-Grundlagen. Und die 8 Blutmarker, die der Hausarzt nie anordnet, obwohl er sollte.</p>
+          <ul class="m-items">
+            <li>5 Supplemente mit echter Evidenz: NMN, Omega-3, Vitamin D3+K2, Magnesium, Kreatin — mit Dosierung</li>
+            <li>ApoB, HbA1c, freies Testosteron, Homocystein, hsCRP — was sie bedeuten und wie du sie bewegst</li>
+            <li>Wie du dein eigenes Blutbild interpretierst — ohne einen Longevity-Spezialisten für €300/Stunde</li>
+            <li>Welche Bluttests du in Deutschland selbst beauftragen kannst — und wie das geht</li>
+          </ul>
+          <div class="m-pills">
+            <span class="pill">📓 Workbook 2</span>
+            <span class="pill">📊 Biomarker-Dashboard</span>
+            <span class="pill">💬 Blutbild-Analyse</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod">
+        <div class="m-n">03</div>
+        <div>
+          <div class="m-tag">Modul 3 · ca. 20 Min · Der Fahrplan</div>
+          <h3>System statt Willenskraft</h3>
+          <p>Dein sequenzierter 90-Tage-Plan. Monat 1, Monat 2, Monat 3 — jeder Schritt konkret. Kein Overwhelm, keine Entscheidungs-üdigkeit. Du weißt jeden Tag was du tust und warum.</p>
+          <ul class="m-items">
+            <li>Phase 1 (Tag 1–30): Nur Fundament — Schlaf, Ernährung, Training und Baseline-Bluttest beauftragen</li>
+            <li>Phase 2 (Tag 31–60): Stack hinzufügen — Supplemente, Biomarker-Baseline, Tracking-System aufbauen</li>
+            <li>Phase 3 (Tag 61–90): Auf Basis der Daten optimieren, Jahresreview-Gewohnheit verankern</li>
+            <li>Die „Never-Miss-Twice"-Regel: Die einzige Gewohnheits-Regel, die durch Verhaltensforschung belegt ist</li>
+          </ul>
+          <div class="m-pills">
+            <span class="pill">📓 Workbook 3</span>
+            <span class="pill">📊 90-Tage-Tracker</span>
+            <span class="pill">💬 Personalisierter Plan</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="qav-section">
+      <p class="qav-title">+ 3 Quick-Action Videos <span>(je 5–7 Min) — Direkt umsetzbar, noch heute</span></p>
+      <div class="qav-row">
+        <div class="qav">
+          <div class="qav-l">Quick-Action 1</div>
+          <h4>Der Bluttest-Guide</h4>
+          <p>Welche Tests du in Deutschland selbst beauftragst, was sie kosten, und was du mit den Ergebnissen machst.</p>
+        </div>
+        <div class="qav">
+          <div class="qav-l">Quick-Action 2</div>
+          <h4>Der Supplement-Stack</h4>
+          <p>Die 5 Produkte, die Dosierungen, das Timing — konkret, ohne Eigeninteresse, ohne Supplement-Store.</p>
+        </div>
+        <div class="qav">
+          <div class="qav-l">Quick-Action 3</div>
+          <h4>Das Schlaf-Setup</h4>
+          <p>Drei Maßnahmen für heute Nacht, die messbar wirken — basierend auf Matthew Walkers Forschung.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  TEAM-COACH
+  MARKUS-TEST: Er kauft KEINEN KI-Kurs.
+  Er kauft einen Coach, der rund um die Uhr
+  da ist. "Das MASTERPLAN Team" — nie "KI" oder "AI".
+══════════════════════════════════════════ -->
+<section id="coach">
+  <div class="wrap">
+    <span class="kicker" style="text-align:center; display:block">Deine persönliche Begleitung</span>
+    <h2 style="text-align:center">Das MASTERPLAN Team —<br/><em>Immer dann da, wenn du eine Frage hast.</em></h2>
+    <p class="lead" style="text-align:center; max-width:540px; margin:0 auto;">Der MASTERPLAN ist kein Video-Kurs der nach dem Kauf in einer Schublade verschwindet. Du bekommst 30 Tage persönliche Begleitung — das MASTERPLAN Team antwortet auf deine Fragen, analysiert dein Blutbild und passt deinen Plan an.</p>
+
+    <div class="coach-card">
+      <div class="coach-icon">💬</div>
+      <h3>Was das MASTERPLAN Team für dich tut</h3>
+      <p>Dein persönlicher Coach kennt alle Inhalte des MASTERPLANS, dein Profil und deinen 90-Tage-Plan. Du schreibst, er antwortet — konkret, auf Deutsch, ohne „es kommt drauf an".</p>
+      <div class="coach-feats">
+        <div class="cf">
+          <h4>🩸 Blutbild-Analyse</h4>
+          <p>Blutwerte hochladen, verständliche Auswertung erhalten — mit konkreten nächsten Schritten.</p>
+        </div>
+        <div class="cf">
+          <h4>🎯 Plan-Anpassung</h4>
+          <p>Wenn etwas nicht passt, passt das Team den Plan an. Kein Buch, das keine Fragen beantworten kann.</p>
+        </div>
+        <div class="cf">
+          <h4>💊 Supplement-Fragen</h4>
+          <p>Dosierungen, Timing, Wechselwirkungen — auf deinen Stack und deine Situation abgestimmt.</p>
+        </div>
+        <div class="cf">
+          <h4>📊 Fortschritts-Check</h4>
+          <p>Regelmäßige Überprüfung ob du auf Kurs bist — und was du anpassen solltest wenn nicht.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  VERGLEICHSTABELLE
+  MARKUS-TEST: Er hasst Hype. Wenn wir
+  ehrlich vergleichen, vertrauen wir ihm.
+  Die Tabelle schlägt zehn Superlative.
+══════════════════════════════════════════ -->
+<section id="compare">
+  <div class="wrap">
+    <span class="kicker" style="text-align:center; display:block">Der Vergleich</span>
+    <h2 style="text-align:center">MASTERPLAN vs.<br/><em>Die Alternativen</em></h2>
+
+    <div class="cmp-table">
+      <div class="cmp-head">
+        <div>Was du bekommst</div>
+        <div class="ch-mp">MASTERPLAN</div>
+        <div>Andere Kurse</div>
+        <div>Longevity-Arzt</div>
+      </div>
+      <div class="cmp-row">
+        <div>Strukturierter 90-Tage-Plan</div>
+        <div><span class="cy">✓</span></div>
+        <div><span class="cn">✗</span></div>
+        <div><span class="cp">selten</span></div>
+      </div>
+      <div class="cmp-row">
+        <div>Biomarker-Dashboard (8 Marker)</div>
+        <div><span class="cy">✓</span></div>
+        <div><span class="cn">✗</span></div>
+        <div><span class="cy">✓</span></div>
+      </div>
+      <div class="cmp-row">
+        <div>Persönlicher Coach-Support (30 Tage)</div>
+        <div><span class="cy">✓</span></div>
+        <div><span class="cn">✗</span></div>
+        <div><span class="cp">teuer extra</span></div>
+      </div>
+      <div class="cmp-row">
+        <div>Auf Deutsch, DACH-spezifisch</div>
+        <div><span class="cy">✓</span></div>
+        <div><span class="cn">✗</span></div>
+        <div><span class="cp">je nach Arzt</span></div>
+      </div>
+      <div class="cmp-row">
+        <div>Einmalige Kosten — kein Abo</div>
+        <div><span class="cy">✓</span></div>
+        <div><span class="cp">oft Abo</span></div>
+        <div><span class="cn">✗</span></div>
+      </div>
+      <div class="cmp-row">
+        <div>Basiert auf Johnson / Attia / Sinclair</div>
+        <div><span class="cy">✓</span></div>
+        <div><span class="cp">selten</span></div>
+        <div><span class="cp">teils</span></div>
+      </div>
+      <div class="cmp-row">
+        <div>Gesamtkosten</div>
+        <div style="color:var(--orange); font-weight:900;">€297</div>
+        <div style="color:var(--grey);">€97–600</div>
+        <div style="color:var(--grey);">€2.000–8.000</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  VALUE STACK + PREIS
+  MARKUS-TEST: Garantie VOR Preis — immer.
+  Er braucht Sicherheit, bevor er zahlt.
+  €297 vs. €1.497 Gesamtwert: er rechnet das.
+══════════════════════════════════════════ -->
+<section id="value">
+  <div class="wrap">
+    <span class="kicker" style="text-align:center; display:block">Was du bekommst</span>
+    <h2 style="text-align:center">Das vollständige<br/><em>MASTERPLAN System</em></h2>
+
+    <div class="val-tbl">
+      <div class="vr">
+        <div class="vn"><b>Modul 1 — Das Fundament</b>Schlaf · Ernährung · Bewegung (Video, ca. 20 Min.)</div>
+        <div class="vp">€147</div>
+      </div>
+      <div class="vr">
+        <div class="vn"><b>Modul 2 — Der Stack</b>Supplemente · Biomarker · Tracking (Video, ca. 20 Min.)</div>
+        <div class="vp">€147</div>
+      </div>
+      <div class="vr">
+        <div class="vn"><b>Modul 3 — Der Fahrplan</b>Sequenzierter 90-Tage-Plan (Video, ca. 20 Min.)</div>
+        <div class="vp">€147</div>
+      </div>
+      <div class="vr">
+        <div class="vn"><b>3 Quick-Action Videos</b>Bluttest-Guide · Supplement-Stack · Schlaf-Setup (je 5–7 Min.)</div>
+        <div class="vp">€97</div>
+      </div>
+      <div class="vr">
+        <div class="vn"><b>Komplettes MASTERPLAN Workbook</b>Druckbar, ausfüllbar — für alle 3 Module</div>
+        <div class="vp">€47</div>
+      </div>
+      <div class="vr">
+        <div class="vn"><b>Biomarker-Dashboard Template</b>Alle 8 kritischen Marker — verständlich ohne Arzt</div>
+        <div class="vp">€47</div>
+      </div>
+      <div class="vr">
+        <div class="vn"><b>30 Tage persönlicher Coach-Support</b>Das MASTERPLAN Team — Blutbild, Fragen, Plan-Anpassung</div>
+        <div class="vp">€497</div>
+      </div>
+      <div class="vr">
+        <div class="vn"><b>Lebenslanger Zugang + alle Updates</b>Der Preis steigt. Dein Zugang nicht.</div>
+        <div class="vp">€47</div>
+      </div>
+      <div class="vr vrtot">
+        <div class="vn" style="font-weight:900; color:var(--white); font-size:.94rem;">Gesamtwert</div>
+        <div class="vp">€1.176</div>
+      </div>
+    </div>
+
+    <!-- GARANTIE VOR PREIS -->
+    <div class="guar-box">
+      <div style="font-size:1.8rem; margin-bottom:10px;">🛡️</div>
+      <p>
+        <strong>30-Tage Geld-zurück-Garantie — ohne Formulare, ohne Fragen.</strong><br/><br/>
+        Schließe den MASTERPLAN ab, setze Phase 1 um. Wenn du der Meinung bist, dass es das nicht wert war — schreib uns innerhalb von 30 Tagen. Volles Geld zurück.<br/><br/>
+        Dieses Business funktioniert nur, wenn es für dich funktioniert.
+      </p>
+    </div>
+
+    <!-- PREIS BOX -->
+    <div class="price-box" id="checkout">
+      <div class="p-was">Gesamtwert: €1.176</div>
+      <div class="p-main">€297</div>
+      <div class="p-plan">oder <strong>3× €99</strong> — kein Mehrpreis, keine Zinsen</div>
+      <div class="p-note">Einmalzahlung · Kein Abo · Kein Upsell</div>
+
+      <div class="micro-social" style="margin-bottom:14px;">
+        <span class="ms-stars">★★★★★</span>
+        <span class="ms-quote">„Das System das ich mit 52 gebraucht hätte." — Thomas W., Hannover</span>
+      </div>
+
+      <a href="https://myablefy.com/s/masterplan-longevity/masterplan-longevity-5612fe43/payment" class="btn-big">MASTERPLAN starten — Sofortzugang →</a>
+      <p class="btn-note" style="margin-top:12px;"><strong>✓ 30-Tage Geld-zurück-Garantie</strong> · SSL-Zahlung · Sofortzugang</p>
+      <div class="badge-row" style="margin-top:12px;">
+        <span class="badge">🔒 SSL</span>
+        <span class="badge">🛡️ 30-Tage Rückgabe</span>
+        <span class="badge">⚡ Sofortzugang</span>
+        <span class="badge">♾️ Lebenslang</span>
+      </div>
+    </div>
+
+    <p class="widerruf-note">
+      <strong>Hinweis zu digitalen Produkten:</strong> Mit Abschluss des Kaufs stimmst du der sofortigen Bereitstellung des digitalen Inhalts zu und bestätigst, dass du damit auf dein Widerrufsrecht verzichtest (§ 356 Abs. 5 BGB). Davon unberührt bleibt die freiwillige <strong>30-Tage-Geld-zurück-Garantie</strong> gemäß unserer AGB.
+    </p>
+
+    <p style="text-align:center; font-size:.76rem; color:var(--grey); max-width:490px; margin:22px auto 0; line-height:1.65; font-style:italic;">
+      „€297 ist nicht ein Schnäppchenpreis. Es ist eine strategische Entscheidung: lieber 10.000 Männern helfen als 500 — die sich €1.176 leisten könnten."
+    </p>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  TESTIMONIALS
+  MARKUS-TEST: Er glaubt keinem 32-Jährigen.
+  Er glaubt einem Thomas aus Hannover, 54,
+  mit konkret messbaren Blutbild-Werten.
+══════════════════════════════════════════ -->
+<section id="social">
+  <div class="wrap">
+    <span class="kicker">Frühe Ergebnisse</span>
+    <h2>Was andere Männer sagen</h2>
+    <div class="t-grid">
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <div class="t-metric">🩸 HbA1c: 6,2 → 5,7 in 90 Tagen · Phase 2 aktiv</div>
+        <p>„Der Arzt hatte mir seit Jahren gesagt: alles normal. Erst der MASTERPLAN hat mir gezeigt, welche Fragen ich hätte stellen sollen — und wie ich die Antworten selbst herausfinde."</p>
+        <div class="t-who">Michael B.</div>
+        <div class="t-det">54 Jahre · Geschäftsführer · Hamburg</div>
+        <p class="t-disclaimer">Individuelle Ergebnisse. Die dargestellten Erfahrungen sind persönliche Berichte und nicht repräsentativ før jeden Teilnehmer.</p>
+      </div>
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <div class="t-metric">⚡ Energie nach 15 Uhr: weg ab Tag 22 · Schlaf-Score +28%</div>
+        <p>„Ich war der Typ, der immer funktioniert hat. Ich habe einfach nicht gemerkt, dass ich nur noch auf Autopilot laufe. Phase 1 allein hat das verändert."</p>
+        <div class="t-who">Thomas W.</div>
+        <div class="t-det">52 Jahre · Ingenieur · Hannover</div>
+        <p class="t-disclaimer">Individuelle Ergebnisse. Die dargestellten Erfahrungen sind persönliche Berichte und nicht repräsentativ før jeden Teilnehmer.</p>
+      </div>
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <div class="t-metric">📊 Freies Testosteron: +18% nach 90 Tagen · Ohne Medikamente</div>
+        <p>„Ich hatte Podcasts gehört, Bücher gelesen. Aber das MASTERPLAN-System hat mir gezeigt, was ich in der falschen Reihenfolge gemacht habe. Das war der Unterschied."</p>
+        <div class="t-who">Klaus R.</div>
+        <div class="t-det">57 Jahre · Arzt · München</div>
+        <p class="t-disclaimer">Individuelle Ergebnisse. Die dargestellten Erfahrungen sind persönliche Berichte und nicht repräsentativ für jeden Teilnehmer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  FÜR WEN
+  Qualification erhöht die Conversion —
+  weil Markus sich bestätigt føhlt, nicht verkauft.
+══════════════════════════════════════════ -->
+<section id="forwho">
+  <div class="wrap">
+    <span class="kicker" style="text-align:center; display:block">Für wen ist der MASTERPLAN?</span>
+    <h2 style="text-align:center">Ehrliche Antwort —<br/><em>damit du die richtige Entscheidung triffst.</em></h2>
+    <div class="fw-grid">
+      <div class="fw-card fw-yes">
+        <h3>✓ Das ist für dich, wenn...</h3>
+        <ul class="fw-list">
+          <li><span>✓</span> Du ein Mann zwischen 48 und 65 bist, der aufgehört hat „alles normal" als Antwort zu akzeptieren</li>
+          <li><span>✓</span> Du weißt, dass mehr möglich ist — aber kein System gefunden hast, das zusammenhält</li>
+          <li><span>✓</span> Du beim nächsten Arzttermin die Fragen stellen willst — nicht nur die Antworten annehmen</li>
+          <li><span>✓</span> Du bereit bist, ein System zu folgen, wenn es klar und umsetzbar ist</li>
+          <li><span>✓</span> Du messbare Ergebnisse willst — kein Motivations-Content</li>
+        </ul>
+      </div>
+      <div class="fw-card fw-no">
+        <h3>✗ Das ist nicht für dich, wenn...</h3>
+        <ul class="fw-list">
+          <li><span style="color:var(--red)">✗</span> Du eine Pille suchst, die das für dich erledigt. Die gibt es nicht.</li>
+          <li><span style="color:var(--red)">✗</span> Du bereits ein vollständiges Longevity-Protokoll mit jährlichen Bluttests läufst. Du lernst nichts Neues.</li>
+          <li><span style="color:var(--red)">✗</span> Du nicht bereit bist, Phase 1 in den ersten 30 Tagen wirklich umzusetzen.</li>
+          <li><span style="color:var(--red)">✗</span> Du glaubst, dass das Altern keine Rolle spielt. Dann ist das hier nicht für dich.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  TWO FUTURES
+  MARKUS-TEST: Nicht "mit 45". Er ist 53.
+  "Mit 63 bist du der Typ, den alle fragen."
+  Das trifft ihn.
+══════════════════════════════════════════ -->
+<section id="futures">
+  <div class="wrap">
+    <span class="kicker" style="text-align:center; display:block">Die Entscheidung</span>
+    <h2 style="text-align:center">Zwei Versionen von dir<br/><em>mit 63.</em></h2>
+    <div class="f-grid">
+      <div class="fut bad">
+        <span class="f-label">Version A — Keine Änderung</span>
+        <h3>Du machst weiter wie bisher.</h3>
+        <p>Müde. Ohne System. Der Arzt sagt „alles normal". Du nimmst das an — weil du keine Alternative kennst. Mit 63 nimmst du Blutdruckmittel. Statine. Du funktionierst noch — aber du lebst nicht mehr.<br/><br/><strong>Das ist keine Prophezeiung. Das ist Statistik.</strong></p>
+      </div>
+      <div class="fut good">
+        <span class="f-label">Version B — MASTERPLAN</span>
+        <h3>90 Tage. Dann ein anderes Gespräch.</h3>
+        <p>Bluttest an Tag 60. Du weißt zum ersten Mal deinen ApoB-Wert, dein freies Testosteron, deinen VO₂-Max. Du änderst, was geändert werden muss.<br/><br/><strong>Mit 63 bist du der Mann, den die anderen im Fitnessstudio fragen: „Was machst du eigentlich?"</strong></p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <div class="micro-social" style="margin-bottom:14px;">
+        <span class="ms-stars">★★★★★</span>
+        <span class="ms-quote">„Mit 57 fühle ich mich besser als mit 47." — Klaus R., München</span>
+      </div>
+      <a href="#checkout" class="btn-big" style="display:inline-block; max-width:480px;">MASTERPLAN starten — €297 →</a>
+      <p class="btn-note" style="margin-top:10px;"><strong>✓ 30-Tage Garantie</strong> · Einmalig €297 · Sofortzugang</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <h2 style="text-align:center">Häufige Fragen</h2>
+    <div class="faq-list">
+      <div class="fi">
+        <div class="fq">Wie lange dauert der MASTERPLAN?</div>
+        <div class="fa">Die 6 Videos haben eine Gesamtlänge von ca. 75–90 Minuten. Du kannst alles in einer Sitzung abschließen — und noch am selben Tag Phase 1 starten. Die Umsetzung dauert 90 Tage. Das MASTERPLAN Team begleitet dich dabei.</div>
+      </div>
+      <div class="fi">
+        <div class="fq">Muss ich viel Geld für Supplements ausgeben?</div>
+        <div class="fa"><strong>Phase 1 kostet €0</strong> — sie besteht ausschließlich aus Schlaf, Ernährung und Bewegung. Phase 2 fügt einen Supplement-Stack für €60–95/Monat hinzu. Wir verkaufen keine Supplements. Wir zeigen dir, welche fünf echte Evidenz haben — und wo du sie kaufst.</div>
+      </div>
+      <div class="fi">
+        <div class="fq">Ich bin kein Biohacker. Ist das trotzdem für mich?</div>
+        <div class="fa">Ja — der MASTERPLAN wurde explizit für Männer gebaut, die keine Biohacker sind. Kein Jargon, kein Fachwissen vorausgesetzt. Jeder Schritt ist so erklärt, dass du ihn direkt umsetzen kannst — auch wenn du noch nie etwas von ApoB gehört hast.</div>
+      </div>
+      <div class="fi">
+        <div class="fq">Was ist der persönliche Coach-Support genau?</div>
+        <div class="fa">Du bekommst 30 Tage Zugang zu einem persönlichen Coach des MASTERPLAN Teams. Du kannst Blutbilder hochladen, konkrete Fragen zu Supplements, Training und Ernährung stellen und deinen 90-Tage-Plan anpassen lassen — auf Deutsch, konkret, ohne „es kommt drauf an".</div>
+      </div>
+      <div class="fi">
+        <div class="fq">Was, wenn es nicht funktioniert?</div>
+        <div class="fa">30-Tage Geld-zurück ohne Wenn und Aber. Schreib uns — wir erstatten den vollen Betrag. Keine Formulare, keine Fragen. Bei €297 würden wir lieber einen Käufer erstatten als das Vertrauen von zehn zu verlieren.</div>
+      </div>
+      <div class="fi">
+        <div class="fq">Ist der MASTERPLAN auch für Männer øber 60?</div>
+        <div class="fa">Ja. Positioniert ist er für 48–65, weil das der Altersbereich mit dem höchsten ROI ist. Männer über 60 profitieren genauso — oft mit noch unmittelbarer spürbaren Ergebnissen, weil der Handlungsbedarf größer ist.</div>
+      </div>
+      <div class="fi">
+        <div class="fq">Gibt es laufende Kosten?</div>
+        <div class="fa">Nein. €297 einmalig. Lebenslanger Zugang. Alle zukünftigen Updates inklusive. Der 30-tägige Coach-Support ist im Preis enthalten — danach optional verlängerbar.</div>
+      </div>
+      <div class="fi">
+        <div class="fq">Ersetzt der MASTERPLAN meinen Arzt?</div>
+        <div class="fa">Nein — und das ist Absicht. <strong>Der MASTERPLAN ist Bildung, kein Ersatz für medizinische Beratung.</strong> Was er dir gibt: das Wissen, die richtigen Fragen zu stellen, die richtigen Bluttests anzufordern und die Antworten zu verstehen. Viele Teilnehmer berichten, dass ihre Arztgespräche nach dem MASTERPLAN produktiver werden — weil sie fundierter fragen. Bei ernsthaften gesundheitlichen Beschwerden: Arzt zuerst, immer.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FINAL CTA -->
+<section id="fcta">
+  <div class="wrap">
+    <h2>Der MASTERPLAN ist<br/><em>die Tür zwischen beiden Versionen.</em></h2>
+    <p class="lead">Beide Zukønfte sind real. Die einzige Variable ist eine Entscheidung, die du heute triffst.</p>
+    <div class="micro-social" style="margin-bottom:18px;">
+      <span class="ms-stars">★★★★★</span>
+      <span class="ms-quote">„Endlich ein System, das zur Realität eines Mannes øber 50 passt." — Michael B., Hamburg</span>
+    </div>
+    <a href="#checkout" class="btn-big" style="display:inline-block; max-width:480px; margin:0 auto 12px;">MASTERPLAN starten — €297 →</a>
+    <p class="btn-note"><strong>✓ 30-Tage Geld-zurück-Garantie</strong> · Lebenslanger Zugang · Sofortzugang</p>
+    <div class="badge-row" style="margin-top:12px; justify-content:center;">
+      <span class="badge">🔒 SSL-verschløsselt</span>
+      <span class="badge">🛡️ 30-Tage Rückgabe</span>
+      <span class="badge">⚡ Sofortzugang</span>
+      <span class="badge">♾️ Lebenslang</span>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="f-links">
+    <a href="./impressum.html">Impressum</a>
+    <a href="./datenschutz.html">Datenschutz</a>
+    <a href="./agb.html">AGB</a>
+    <a href="mailto:florian.benjamin.seeger@googlemail.com">Kontakt</a>
+    <a href="./MASTERPLAN_Website_DE_v3.html">MASTERPLAN Longevity</a>
+  </div>
+  <p>
+    © 2026 MASTERPLAN · Jonas Achilles & Das MASTERPLAN Team · Deutschland<br/>
+    MASTERPLAN ist ein Bildungs- und Coaching-Programm und kein Ersatz før medizinische Beratung. Bei gesundheitlichen Beschwerden wende dich an einen Arzt.<br/>
+    Alle Empfehlungen basieren auf aktueller Forschungsliteratur und dienen allgemeinen Informationszwecken. Konsultiere immer einen Arzt vor der Einnahme von Nahrungsergänvungsmitteln.
+  </p>
+</footer>
+
+<div class="sticky">
+  <p><strong>MASTERPLAN</strong> — Das Longevity-System für Männer ab 50. €297 einmalig. 30-Tage-Garantie.</p>
+  <a href="#checkout" class="sticky-btn">Jetzt starten →</a>
+</div>
+
+</body>
+</html>
