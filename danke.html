@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Willkommen im MASTERPLAN · Dein Zugang ist bereit</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="https://masterplan-longevity.de/favicon.png" />
+  <style>
+    :root {
+      --black:   #080808;
+      --dark:    #0d0d0d;
+      --card:    #111111;
+      --border:  #1e1e1e;
+      --orange:  #f97316;
+      --ox:      #c2410c;
+      --white:   #ffffff;
+      --grey:    #6b7280;
+      --light:   #c9cdd4;
+      --green:   #22c55e;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    a { text-decoration: none; color: inherit; }
+    nav {
+      background: var(--black);
+      border-bottom: 1px solid var(--border);
+      padding: 0 32px;
+      height: 58px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .nav-logo {
+      font-size: .85rem; font-weight: 900; letter-spacing: .22em;
+      text-transform: uppercase; color: var(--white);
+    }
+    .nav-logo span { color: var(--orange); }
+    .hero {
+      text-align: center;
+      padding: 80px 24px 60px;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%,
+        rgba(34,197,94,.08) 0%, transparent 65%);
+    }
+    .check-icon {
+      width: 80px; height: 80px;
+      background: rgba(34,197,94,.12);
+      border: 2px solid rgba(34,197,94,.3);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 28px;
+      font-size: 2.4rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900; line-height: 1.08;
+      letter-spacing: -.03em;
+      margin-bottom: 16px;
+    }
+    .hero h1 em { color: var(--green); font-style: normal; }
+    .hero-sub {
+      font-size: 1.05rem; color: var(--light);
+      max-width: 520px; margin: 0 auto; line-height: 1.7;
+    }
+    .steps {
+      max-width: 620px; margin: 0 auto; padding: 0 24px 80px;
+    }
+    .steps-title {
+      font-size: .68rem; font-weight: 800; letter-spacing: .24em;
+      text-transform: uppercase; color: var(--orange);
+      text-align: center; margin-bottom: 32px;
+    }
+    .step {
+      display: flex; gap: 20px; padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .step:last-child { border-bottom: none; }
+    .step-num {
+      width: 44px; height: 44px;
+      background: rgba(249,115,22,.1);
+      border: 1px solid rgba(249,115,22,.25);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .9rem; font-weight: 900; color: var(--orange);
+      flex-shrink: 0;
+    }
+    .step-content h3 {
+      font-size: 1.05rem; font-weight: 800; color: var(--white);
+      margin-bottom: 6px;
+    }
+    .step-content p { font-size: .88rem; color: var(--light); line-height: 1.7; }
+    .step-content a { color: var(--orange); text-decoration: underline; }
+    .cta-box {
+      max-width: 520px; margin: 0 auto 60px;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 36px 32px; text-align: center;
+    }
+    .cta-box h3 { font-size: 1.2rem; font-weight: 800; margin-bottom: 12px; }
+    .cta-box p {
+      font-size: .88rem; color: var(--light); line-height: 1.7; margin-bottom: 24px;
+    }
+    .btn-primary {
+      display: inline-block; background: var(--orange); color: var(--black);
+      padding: 18px 44px; border-radius: 10px;
+      font-size: 1rem; font-weight: 900;
+      box-shadow: 0 0 50px rgba(249,115,22,.25); transition: all .15s;
+    }
+    .btn-primary:hover {
+      background: var(--ox); color: #fff;
+      box-shadow: 0 0 80px rgba(249,115,22,.4); transform: translateY(-2px);
+    }
+    .expect { background: var(--dark); padding: 60px 24px; text-align: center; }
+    .expect h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 32px; }
+    .expect-grid {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px; max-width: 680px; margin: 0 auto;
+    }
+    .expect-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 24px 18px;
+    }
+    .expect-card .icon { font-size: 1.4rem; margin-bottom: 10px; }
+    .expect-card h4 {
+      font-size: .82rem; font-weight: 800; color: var(--white); margin-bottom: 6px;
+    }
+    .expect-card p { font-size: .76rem; color: var(--light); line-height: 1.6; }
+    footer {
+      border-top: 1px solid var(--border); padding: 28px 24px;
+      text-align: center; font-size: .72rem; color: var(--grey);
+    }
+    .f-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 10px; }
+    .f-links a:hover { color: var(--white); }
+    @media (max-width: 640px) {
+      .expect-grid { grid-template-columns: 1fr; }
+      .cta-box { margin-left: 16px; margin-right: 16px; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">MASTER<span>PLAN</span></div>
+</nav>
+<section class="hero">
+  <div class="check-icon">✓</div>
+  <h1>
+    Dein MASTERPLAN<br/>
+    <em>ist freigeschaltet.</em>
+  </h1>
+  <p class="hero-sub">
+    Die Zahlung war erfolgreich. Du hast jetzt Zugang zum kompletten System.
+    Hier ist dein Fahrplan für die nächsten 10 Minuten.
+  </p>
+</section>
+<div class="steps">
+  <p class="steps-title">Deine nächsten 3 Schritte</p>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-content">
+      <h3>Check dein Postfach</h3>
+      <p>
+        Du bekommst in den nächsten Minuten eine E-Mail von
+        <strong>Jonas von MASTERPLAN</strong> mit deinem persönlichen Zugangslink.
+        Schau auch im Spam-Ordner nach.
+      </p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-content">
+      <h3>Starte mit Modul 1</h3>
+      <p>
+        Öffne den Kurs und beginne mit der ersten Lektion: <strong>Schlaf</strong>.
+        Nicht überspringen — die Reihenfolge ist der Hebel.
+        Du brauchst ~15 Minuten für den Einstieg.
+      </p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-content">
+      <h3>Setze heute Abend Regel #1 um</h3>
+      <p>
+        Am Ende der ersten Lektion bekommst du eine konkrete Aktion.
+        Setz sie heute Abend um. Nicht morgen.
+        <strong>Das ist der Unterschied zwischen Wissen und Ergebnis.</strong>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="cta-box">
+  <h3>Bereit? Dein Kurs wartet.</h3>
+  <p>
+    Klick auf den Button, um direkt zum Kursbereich zu gelangen.
+    Falls du deinen Zugangslink noch nicht hast, check dein Postfach.
+  </p>
+  <a href="https://myablefy.com/s/masterplan-longevity/masterplan-longevity-5612fe43" class="btn-primary">
+    Zum Kursbereich →
+  </a>
+</div>
+<section class="expect">
+  <h2>Was in den nächsten Tagen passiert</h2>
+  <div class="expect-grid">
+    <div class="expect-card">
+      <div class="icon">📧</div>
+      <h4>7 Onboarding-Mails</h4>
+      <p>Über 30 Tage bekommst du begleitende E-Mails mit Tipps, Erinnerungen und Motivation.</p>
+    </div>
+    <div class="expect-card">
+      <div class="icon">📋</div>
+      <h4>Workbook</h4>
+      <p>Im Kursbereich findest du das MASTERPLAN Workbook — dein persönlicher Tracker für 90 Tage.</p>
+    </div>
+    <div class="expect-card">
+      <div class="icon">🛡️</div>
+      <h4>30-Tage-Garantie</h4>
+      <p>Nicht zufrieden? Schreib uns innerhalb von 30 Tagen und du bekommst dein Geld zurück.</p>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="f-links">
+    <a href="./index.html">Startseite</a>
+    <a href="./impressum.html">Impressum</a>
+    <a href="./datenschutz.html">Datenschutz</a>
+    <a href="./agb.html">AGB</a>
+  </div>
+  <p>© 2026 MASTERPLAN · Jonas Achilles & Das MASTERPLAN Team · Deutschland</p>
+</footer>
+</body>
+</html>
