@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Einmaliges Angebot · Biomarker Masterclass</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="https://masterplan-longevity.de/favicon.png" />
+  <style>
+    :root {
+      --black:#080808;--dark:#0d0d0d;--card:#111111;--border:#1e1e1e;
+      --orange:#f97316;--ox:#c2410c;--white:#ffffff;--grey:#6b7280;
+      --light:#c9cdd4;--green:#22c55e;--red:#ef4444;
+    }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--black);color:var(--white);font-family:-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}
+    a{text-decoration:none;color:inherit}
+    nav{background:var(--black);border-bottom:1px solid var(--border);padding:0 32px;height:58px;display:flex;align-items:center;justify-content:center}
+    .nav-logo{font-size:.85rem;font-weight:900;letter-spacing:.22em;text-transform:uppercase;color:var(--white)}
+    .nav-logo span{color:var(--orange)}
+    .urgency-bar{background:linear-gradient(90deg,var(--orange),var(--ox));text-align:center;padding:12px 24px;font-size:.82rem;font-weight:800;color:var(--black);letter-spacing:.02em}
+    .hero{text-align:center;padding:64px 24px 48px;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(249,115,22,.07) 0%,transparent 65%)}
+    .hero-badge{display:inline-block;background:rgba(249,115,22,.12);border:1px solid rgba(249,115,22,.25);border-radius:100px;padding:6px 18px;font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);margin-bottom:24px}
+    .hero h1{font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:900;line-height:1.1;letter-spacing:-.03em;margin-bottom:20px;max-width:700px;margin-left:auto;margin-right:auto}
+    .hero h1 em{color:var(--orange);font-style:normal}
+    .hero-sub{font-size:1.05rem;color:var(--light);max-width:560px;margin:0 auto;line-height:1.7}
+    .problem{max-width:640px;margin:0 auto;padding:48px 24px 0}
+    .problem h2{font-size:1.3rem;font-weight:800;margin-bottom:16px;line-height:1.3}
+    .problem p{font-size:.95rem;color:var(--light);line-height:1.8;margin-bottom:12px}
+    .problem strong{color:var(--white)}
+    .value-stack{max-width:640px;margin:0 auto;padding:56px 24px 0}
+    .value-stack h2{font-size:1.3rem;font-weight:800;margin-bottom:28px;text-align:center}
+    .vs-item{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--border);align-items:flex-start}
+    .vs-item:last-child{border-bottom:none}
+    .vs-check{width:32px;height:32px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.25);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;color:var(--green)}
+    .vs-text h4{font-size:.95rem;font-weight:800;color:var(--white);margin-bottom:4px}
+    .vs-text p{font-size:.82rem;color:var(--light);line-height:1.6}
+    .vs-text .val{font-size:.75rem;color:var(--grey);margin-top:4px}
+    .price-section{max-width:520px;margin:56px auto 0;padding:0 24px}
+    .price-box{background:var(--card);border:2px solid var(--orange);border-radius:16px;padding:40px 32px;text-align:center;position:relative;overflow:hidden}
+    .price-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--orange),var(--ox))}
+    .price-label{font-size:.68rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--orange);margin-bottom:12px}
+    .price-original{font-size:1.1rem;color:var(--grey);text-decoration:line-through;margin-bottom:4px}
+    .price-now{font-size:clamp(2.4rem,6vw,3.2rem);font-weight:900;color:var(--white);margin-bottom:4px}
+    .price-save{display:inline-block;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.2);color:var(--green);font-size:.72rem;font-weight:800;padding:4px 12px;border-radius:100px;margin-bottom:24px}
+    .price-note{font-size:.78rem;color:var(--light);line-height:1.6;margin-bottom:28px}
+    .btn-yes{display:block;width:100%;background:var(--orange);color:var(--black);padding:20px 24px;border-radius:10px;font-size:1.05rem;font-weight:900;text-align:center;box-shadow:0 0 50px rgba(249,115,22,.25);transition:all .15s;margin-bottom:14px}
+    .btn-yes:hover{background:var(--ox);color:#fff;box-shadow:0 0 80px rgba(249,115,22,.4);transform:translateY(-2px)}
+    .btn-no{display:block;width:100%;background:transparent;border:1px solid var(--border);color:var(--grey);padding:16px 24px;border-radius:10px;font-size:.85rem;font-weight:600;text-align:center;transition:all .15s}
+    .btn-no:hover{border-color:var(--grey);color:var(--light)}
+    .guarantee{max-width:520px;margin:40px auto 0;padding:0 24px;text-align:center}
+    .guarantee-badge{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;color:var(--green);margin-bottom:8px}
+    .guarantee p{font-size:.78rem;color:var(--grey);line-height:1.6}
+    .faq{max-width:640px;margin:56px auto 0;padding:0 24px 60px}
+    .faq h2{font-size:1.1rem;font-weight:800;text-align:center;margin-bottom:24px}
+    .faq-item{border-bottom:1px solid var(--border);padding:20px 0}
+    .faq-item:last-child{border-bottom:none}
+    .faq-q{font-size:.9rem;font-weight:800;color:var(--white);margin-bottom:8px}
+    .faq-a{font-size:.82rem;color:var(--light);line-height:1.7}
+    footer{border-top:1px solid var(--border);padding:28px 24px;text-align:center;font-size:.72rem;color:var(--grey)}
+    .f-links{display:flex;justify-content:center;gap:20px;margin-bottom:10px}
+    .f-links a:hover{color:var(--white)}
+    @media(max-width:640px){.price-box{padding:32px 20px}.hero{padding:48px 20px 36px}}
+  </style>
+</head>
+<body>
+<nav><div class="nav-logo">MASTER<span>PLAN</span></div></nav>
+<div class="urgency-bar">Dieses Angebot gilt nur jetzt — einmalig nach deinem Kauf. Danach nie wieder zu diesem Preis.</div>
+<section class="hero">
+  <div class="hero-badge">Einmaliges Angebot</div>
+  <h1>Du willst nicht raten.<br/>Du willst <em>messen.</em></h1>
+  <p class="hero-sub">Die meisten optimieren blind. Mit der Biomarker Masterclass weißt du in 60 Minuten exakt, welche Werte du testen musst — und was sie dir wirklich sagen.</p>
+</section>
+<section class="problem">
+  <h2>Das Problem mit "gesund leben":</h2>
+  <p>Du kannst jeden Tag perfekt schlafen, trainieren und essen — und trotzdem <strong>keine Ahnung haben, ob es wirkt</strong>.</p>
+  <p>Ohne Blutwerte fliegst du blind. Du weißt nicht, ob dein Vitamin D bei 20 oder 60 liegt. Ob dein HbA1c steigt. Ob dein Testosteron einbricht, während du denkst, alles läuft.</p>
+  <p><strong>Biomarker sind dein Cockpit.</strong> Ohne sie ist alles Bauchgefühl. Mit ihnen wird Longevity messbar.</p>
+</section>
+<section class="value-stack">
+  <h2>Was du in der Masterclass bekommst:</h2>
+  <div class="vs-item"><div class="vs-check">✓</div><div class="vs-text"><h4>Die 12 wichtigsten Biomarker — erklärt für Nicht-Mediziner</h4><p>Kein Fachchinesisch. Du verstehst sofort, was jeder Wert bedeutet und wo deiner sein sollte.</p><div class="val">Wert: Monate Eigenrecherche gespart</div></div></div>
+  <div class="vs-item"><div class="vs-check">✓</div><div class="vs-text"><h4>Optimale Bereiche vs. "Normwerte"</h4><p>Dein Arzt sagt "alles okay" — aber okay ist nicht optimal. Du lernst den Unterschied, der über Jahrzehnte entscheidet.</p><div class="val">Wert: Bessere Entscheidungen ab dem ersten Blutbild</div></div></div>
+  <div class="vs-item"><div class="vs-check">✓</div><div class="vs-text"><h4>Schritt-für-Schritt Bestellanleitung für dein erstes Blutbild</h4><p>Welches Labor, welche Werte ankreuzen, wie du ohne Arzt bestellst. Kosten: unter 100 €.</p><div class="val">Wert: Sofort handlungsfähig</div></div></div>
+  <div class="vs-item"><div class="vs-check">✓</div><div class="vs-text"><h4>Auswertungs-Template zum Selbstausfüllen</h4><p>Trag deine Werte ein, sieh auf einen Blick wo du stehst. Grün, Gelb, Rot — wie eine Ampel für deine Gesundheit.</p><div class="val">Wert: Dein persönliches Gesundheits-Dashboard</div></div></div>
+  <div class="vs-item"><div class="vs-check">✓</div><div class="vs-text"><h4>Was tun, wenn ein Wert im Roten ist?</h4><p>Konkrete nächste Schritte für jeden Biomarker — Ernährung, Supplemente, wann zum Arzt.</p><div class="val">Wert: Klarer Aktionsplan statt Panik</div></div></div>
+</section>
+<section class="price-section">
+  <div class="price-box">
+    <div class="price-label">Nur jetzt — einmalig nach deinem Kauf</div>
+    <div class="price-original">Regulär: 149 €</div>
+    <div class="price-now">77 €</div>
+    <div class="price-save">Du sparst 72 € (48 %)</div>
+    <p class="price-note">Einmalzahlung. Kein Abo. Sofort verfügbar in deinem Kursbereich, direkt neben dem MASTERPLAN.</p>
+    <a href="https://www.digistore24.com/product/680464" class="btn-yes">Ja, ich will die Biomarker Masterclass für 77 € →</a>
+    <a href="./danke.html" class="btn-no">Nein danke, ich optimiere lieber ohne Daten.</a>
+  </div>
+</section>
+<div class="guarantee">
+  <div class="guarantee-badge">🛡️ 30-Tage-Geld-zurück-Garantie</div>
+  <p>Auch für die Masterclass gilt: Wenn du nicht zufrieden bist, bekommst du dein Geld zurück. Ohne Diskussion. Es gelten unsere <a href="./agb.html" style="color:var(--grey);text-decoration:underline;">AGB</a>.</p>
+</div>
+<section class="faq">
+  <h2>Häufige Fragen</h2>
+  <div class="faq-item"><div class="faq-q">Brauche ich medizinisches Vorwissen?</div><div class="faq-a">Nein. Die Masterclass ist für Einsteiger gemacht. Alles wird so erklärt, dass du es sofort verstehst und anwenden kannst.</div></div>
+  <div class="faq-item"><div class="faq-q">Bekomme ich das Angebot später nochmal?</div><div class="faq-a">Nein. Dieser Preis gilt nur jetzt, direkt nach deinem Kauf. Danach ist die Masterclass nur zum regulären Preis verfügbar.</div></div>
+  <div class="faq-item"><div class="faq-q">Wie lange habe ich Zugriff?</div><div class="faq-a">Unbegrenzt. Die Masterclass liegt in deinem Kursbereich neben dem MASTERPLAN — du kannst sie jederzeit ansehen.</div></div>
+  <div class="faq-item"><div class="faq-q">Was, wenn meine Werte alle gut sind?</div><div class="faq-a">Dann weißt du es — und das ist unbezahlbar. Außerdem lernst du, welche Werte sich mit dem Alter verändern und wann du erneut testen solltest.</div></div>
+</section>
+<footer>
+  <div class="f-links">
+    <a href="./index.html">Startseite</a>
+    <a href="./impressum.html">Impressum</a>
+    <a href="./datenschutz.html">Datenschutz</a>
+    <a href="./agb.html">AGB</a>
+  </div>
+  <p>© 2026 MASTERPLAN · Jonas Achilles & Das MASTERPLAN Team · Deutschland</p>
+</footer>
+</body>
+</html>
